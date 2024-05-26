@@ -31,3 +31,9 @@ compareBtn.addEventListener('click', () => {
     element.classList.toggle('showCompare')
   });
 })
+
+// Auto Year Footer
+const year = new Date().getFullYear()
+const authorYear = document.querySelector('.author .year')
+authorYear.innerHTML = year; //tahun otomatis berubah
+
