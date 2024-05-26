@@ -1,0 +1,52 @@
+/* Media Sm */
+@media (min-width: 640px) {
+
+    /* jumbotron */
+
+    #jumbotron .hotel__address {
+        text-align: left;
+        justify-content: space-between;
+    }
+
+    #jumbotron .hotel__address .n {
+        display: none;
+    }
+
+    #jumbotron .check__room {
+        display: block;
+    }
+
+    #jumbotron .banner .banner__msg {
+        font-size: .9rem;
+    }
+
+    #jumbotron .about .desc {
+        font-size: 1rem;
+    }
+
+    /* End Jumbotron */
+
+    /* Highlight Room */
+
+    #highlightroom .card__price {
+        text-align: right;
+    }
+
+    /* End Highlight Room */
+
+}
+
+/* Media Md */
+@media (min-width: 768px) {
+
+    /* jumbotron */
+
+    #jumbotron .about {
+        place-items: center;
+    }
+
+    #jumbotron .banner .banner__msg h2 {
+        font-size: 2rem !important;
+    }
+
+}
