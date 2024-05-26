@@ -23,4 +23,11 @@ window.addEventListener('scroll', () => {
 })
 
 
-console.info(window.scrollY)
+// compare room
+const compareBtn = document.querySelector('.compareActive')
+const ota = document.querySelectorAll('.ota')
+compareBtn.addEventListener('click', () => {
+  ota.forEach(element => {
+    element.classList.toggle('showCompare')
+  });
+})
