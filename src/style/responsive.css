@@ -32,6 +32,13 @@
         text-align: right;
     }
 
+    #highlightroom .card__room .card__wrapper {
+        flex: 0 0 60%;
+    }
+
+    #highlightroom .card__content {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
     /* End Highlight Room */
 
 }
@@ -48,5 +55,13 @@
     #jumbotron .banner .banner__msg h2 {
         font-size: 2rem !important;
     }
+
+    /* Highlight Room*/
+
+    #highlightroom .card__room .card__wrapper {
+        flex: 0 0 80%;
+    }
+
+    /* End Highlight Room*/
 
 }
