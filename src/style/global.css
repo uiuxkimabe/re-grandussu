@@ -320,6 +320,19 @@ nav .logo a {
   background-color: var(--dark);
   border-radius: 8px;
   margin-right: .5em;
+  position: relative;
+  overflow: hidden;
+}
+
+.card__wrapper .compare .logo__ota img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
 }
 
 .card__wrapper .compare .ota li {
