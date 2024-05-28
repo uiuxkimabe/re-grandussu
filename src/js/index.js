@@ -33,7 +33,37 @@ compareBtn.addEventListener('click', () => {
 })
 
 // Auto Year Footer
-const year = new Date().getFullYear()
+const date = new Date()
 const authorYear = document.querySelector('.author .year')
-authorYear.innerHTML = year; //tahun otomatis berubah
+authorYear.innerHTML = date.getFullYear(); //tahun otomatis berubah
 
+// Price List
+class HighlightPrice {
+  constructor(notPrice, priceWd, priceWe) {
+    this.unPrice = notPrice;
+    this.priceWeekDay = priceWd;
+    this.priceWeekEnd = priceWe
+  }
+}
+
+const notPrice = document.querySelectorAll('.not__price')
+let [standardPrice, deluxePrice, suitePrice] = notPrice
+
+// Cluster Type
+// Standard
+const stdType = new HighlightPrice(800000);
+stdType.unPrice = 800000
+let stdTypeUnPrice = stdType.unPrice;
+standardPrice.innerHTML = stdTypeUnPrice.toLocaleString("id-ID")
+
+// Deluxe
+const dlxType = new HighlightPrice(950000);
+dlxType.unPrice = 950000
+let dlxTypeUnPrice = dlxType.unPrice;
+deluxePrice.innerHTML = dlxTypeUnPrice.toLocaleString("id-ID")
+
+// Junior Suite Price
+const suitesType = new HighlightPrice(1050000);
+suitesType.unPrice = 1050000
+let suitesTypeUnPrice = suitesType.unPrice;
+suitePrice.innerHTML = suitesTypeUnPrice.toLocaleString("id-ID")
