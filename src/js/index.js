@@ -46,24 +46,64 @@ class HighlightPrice {
   }
 }
 
+// Harga Yang Di Coret
 const notPrice = document.querySelectorAll('.not__price')
-let [standardPrice, deluxePrice, suitePrice] = notPrice
+let [standardNotPrice, deluxeNotPrice, suiteNotPrice] = notPrice
 
-// Cluster Type
+// Cluster Type for Not Price
 // Standard
-const stdType = new HighlightPrice(800000);
-stdType.unPrice = 800000
+const stdType = new HighlightPrice(750000);
+stdType.unPrice = 750000
 let stdTypeUnPrice = stdType.unPrice;
-standardPrice.innerHTML = stdTypeUnPrice.toLocaleString("id-ID")
+standardNotPrice.innerHTML = stdTypeUnPrice.toLocaleString("id-ID")
 
 // Deluxe
-const dlxType = new HighlightPrice(950000);
-dlxType.unPrice = 950000
+const dlxType = new HighlightPrice(1150000);
+dlxType.unPrice = 1150000
 let dlxTypeUnPrice = dlxType.unPrice;
-deluxePrice.innerHTML = dlxTypeUnPrice.toLocaleString("id-ID")
+deluxeNotPrice.innerHTML = dlxTypeUnPrice.toLocaleString("id-ID")
 
 // Junior Suite Price
-const suitesType = new HighlightPrice(1050000);
-suitesType.unPrice = 1050000
+const suitesType = new HighlightPrice(1250000);
+suitesType.unPrice = 1250000
 let suitesTypeUnPrice = suitesType.unPrice;
-suitePrice.innerHTML = suitesTypeUnPrice.toLocaleString("id-ID")
+suiteNotPrice.innerHTML = suitesTypeUnPrice.toLocaleString("id-ID")
+
+// Ending Cluster Type for Not Price
+
+// Harga Jual (Harga Sebenarnya)
+const salePrice = document.querySelectorAll('.room__price')
+let [stdRoomPrice, dlxRoomPrice, suiteRoomPrice] = salePrice
+
+// Sale Per CLuster
+// Sale Price STD
+const roomStdWd = new HighlightPrice(699000);
+roomStdWd.priceWeekDay = 699000;
+let roomStdWdShow = roomStdWd.priceWeekDay;
+stdRoomPrice.innerHTML = roomStdWdShow.toLocaleString("ID-id")
+
+// Sale Price DLX
+const roomDlxWd = new HighlightPrice(949000);
+roomDlxWd.priceWeekDay = 949000;
+let roomDlxWdShow = roomDlxWd.priceWeekDay;
+dlxRoomPrice.innerHTML = roomDlxWdShow.toLocaleString("ID-id")
+
+// Sale Price DLX
+const roomSuiteWd = new HighlightPrice(1029000);
+roomSuiteWd.priceWeekDay = 1029000;
+let roomSuiteWdShow = roomSuiteWd.priceWeekDay;
+suiteRoomPrice.innerHTML = roomSuiteWdShow.toLocaleString("ID-id")
+
+// Compare OTA
+const loka = document.querySelectorAll('.loka')
+const tiket = document.querySelectorAll('.tiket')
+const agoda = document.querySelectorAll('.agoda')
+let [lokaStd,lokaDlx,lokaSuite] = loka
+let [tiketStd,tiketDlx,tiketSuite] = tiket
+let [agodaStd, agodaDlx, agodaSuite] = agoda
+
+// Compare 
+const stdOta = new HighlightPrice(750000, 1150000, 1250000)
+stdOta.unPrice = 750000
+stdOta.priceWeekDay = 1150000
+stdOta.priceWeekEnd = 1250000
