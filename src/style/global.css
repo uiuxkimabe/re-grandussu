@@ -370,6 +370,56 @@ nav .logo a {
   color: var(--basic) !important;
 }
 
+.features {
+  margin-top: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  align-items: start !important;
+}
+
+.features .col {
+  overflow: hidden;
+}
+
+.features .desc {
+  margin: .8em 0;
+  color: #4b4b4b;
+}
+
+.features ul {
+  margin-top: 1em;
+  justify-content: flex-start;
+  gap: 1.5em;
+  flex-wrap: wrap;
+  color: #8f8f8f;
+}
+
+.features ul li span {
+  margin: .5em 0;
+  color: #d41283;
+}
+
+.features .partnerSlide {
+  overflow: hidden;
+  gap: 1em;
+  grid-auto-columns: 250px;
+  grid-auto-flow: column;
+  justify-items: stretch;
+}
+
+.partnerSlide .part {
+  animation: infiniteSlide 15s linear infinite;
+  background-color: #d41283;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+@keyframes infiniteSlide {
+ to {
+  translate: calc(-4 * 200px);
+ } 
+}
+
 /* End Highlightroom */
 
 /* Convention Review */
