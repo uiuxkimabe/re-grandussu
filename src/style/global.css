@@ -400,7 +400,7 @@ nav .logo a {
 
 .features .partnerSlide {
   overflow: hidden;
-  gap: 1em;
+  /* gap: 1em; */
   grid-auto-columns: 250px;
   grid-auto-flow: column;
   justify-items: stretch;
@@ -409,11 +409,15 @@ nav .logo a {
 
 .partnerSlide .part {
   animation: infiniteSlide 15s linear infinite;
-  background-color: #d41283;
-  width: 200px;
-  height: 200px;
+  filter: grayscale(100%);
+  max-width: 80px;
+  aspect-ratio: 1;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.partnerSlide .part:hover {
+  filter: grayscale(0);
 }
 
 @keyframes infiniteSlide {
