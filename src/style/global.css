@@ -463,15 +463,7 @@ nav .logo a {
 /* Convention Review */
 
 #conventionReview {
-  background: url(../assets/rooms/anggrek/ANGGREK\ 2.jpg) no-repeat center fixed;
-  background-size: cover;
-  color: var(--basic);
   margin-top: 2em;
-}
-
-#conventionReview .bg {
-  padding: 2em 0;
-  background: rgba(0, 0, 0, 0.9);
 }
 
 #conventionReview .row{
@@ -513,7 +505,7 @@ nav .logo a {
   display: block;
   margin: 2em 0;
   text-align: center;
-  color: var(--basic);
+  color: var(--dark);
 }
 
 /* End Convention Review */
@@ -521,9 +513,8 @@ nav .logo a {
 /* Footer */
 
 footer {
-  background-color: var(--dark);
-  color: var(--basic);
-  padding: 3em 0;
+  background-color: #f3f3f3;
+  padding-top: 3em;
   font-size: .9rem;
 }
 
@@ -533,7 +524,7 @@ footer .row {
 }
 
 footer a {
-  color: var(--basic);
+  color: var(--dark);
 }
 
 footer .hotel__address {
@@ -555,9 +546,10 @@ footer ul li a {
 
 footer .author {
   margin-top: 2em;
-  padding-top: 1em;
-  border-top: 1px solid var(--basic);
+  padding: 1em 0;
+  border-top: 1px solid #b1b1b1;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 /* End Footer */
