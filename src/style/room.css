@@ -1,0 +1,106 @@
+/* Hero */
+
+#hero {
+    background: url(../assets/rooms/catalya/CATALYA\ 10.JPG) no-repeat bottom;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#hero .row {
+    height: 350px;
+    background-color: rgba(0,0,0,.6);
+    text-align: center;
+    color: var(--basic);
+    justify-content: center;
+}
+
+/* End Hero */
+
+/* Rooms */
+
+#rooms .header__nav {
+    justify-content: flex-start;
+    position: sticky;
+    top: 52px;
+    background-color: var(--basic);
+    gap: 1em;
+}
+
+#rooms .header__nav a {
+    display: block;
+    padding: 1em 0;
+    color: var(--dark);
+    font-weight: 600;
+}
+
+#rooms .room__overview {
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.room__overview h3 {
+    margin-bottom: 1em;
+}
+
+.room__overview p {
+    font-size: .9rem;
+}
+
+.nearby ul {
+    gap: .6em;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.nearby ul li {
+    justify-content: flex-start;
+    gap: 5px;
+    padding: .3em;
+    border-radius: 5px;
+    background-color: #acf3cc;
+    color: #0d9139;
+    font-weight: 500;
+}
+
+.maps {
+    overflow: hidden;
+    margin: 2em 0;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 1em;
+    align-items: start !important;
+}
+
+.maps iframe {
+    width: 100%;
+}
+
+.room__detail .card__room figcaption {
+    padding: .6em 0;
+    border-bottom: .5px solid #8f8f8f;
+}
+
+.room__detail .card__room h3 {
+    margin: .5em 0;
+}
+
+.room__detail .card__room ul li {
+    justify-content: flex-start;
+    gap: 5px;
+    padding: .5em 0;
+}
+
+.room__detail .card__room ul li p {
+    color: var(--dark);
+}
+
+.room__detail .card__room ul li span {
+    color: #d41283;
+}
+
+.room__detail .room__features .features__content {
+    height: 400px;
+    overflow-y: scroll;
+}
+
+/* End Rooms */

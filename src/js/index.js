@@ -1,11 +1,3 @@
-// HamBtn
-const hamBtn = document.querySelector(".hamBtn span");
-const navbar = document.querySelector(".navbar");
-hamBtn.addEventListener("click", () => {
-  navbar.classList.toggle("show");
-});
-
-
 // scroll animate 
 const bannerImg = document.querySelector('#jumbotron .banner img')
 const msgSpacing = document.querySelector('#jumbotron .banner .banner__msg h2')
