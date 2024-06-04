@@ -63,13 +63,13 @@
     <section id="rooms">
         <div class="container">
             <div class="header__nav d-flex">
-                <a href="#">Overview</a>
-                <a href="#">Rooms</a>
-                <a href="#">Facilities</a>
-                <a href="#">Policy</a>
+                <a href="#overview">Overview</a>
+                <a href="#facilities">Rooms</a>
+                <a href="#facilities">Facilities</a>
+                <a href="#policy">Policy</a>
             </div>
             <div class="room__overview d-grid">
-                <div class="col">
+                <div class="col" id="overview">
                     <h3>About Rooms</h3>
                     <p>Each room is generously sized, offering ample space for relaxation and work. The tasteful décor blends contemporary
                     style with classic elegance, creating a warm and inviting atmosphere. From plush bedding to stylish furnishings, every
@@ -123,14 +123,258 @@
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="room__detail">
-                <div class="card__room d-flex">
-                    <div class="col"></div>
+            <div class="room__detail" id="facilities">
+                <div class="card__room d-grid">
+                    <div class="col slide">
+                        <div class="main__preview"></div>
+                        <div class="scroll__preview d-flex">
+                            <div class="photo__change"></div>
+                            <div class="photo__change"></div>
+                            <div class="photo__change"></div>
+                            <div class="photo__change"></div>
+                            <div class="photo__change"></div>
+                            <div class="photo__change"></div>
+                            <div class="photo__change"></div>
+                        </div>
+                    </div>
                     <div class="col room__features">
+                        <figcaption>
+                            <h2 class="room__name">Cluster Rose</h2>
+                        </figcaption>
                         <div class="features__content">
                             <figcaption>
                                 <h3>Room Information</h3>
                                 <ul>
+                                    <li class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            bed
+                                        </span>
+                                        <p class="type">Standard</p>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            straighten
+                                        </span>
+                                        <p>42.0 m<sup>2</sup></p>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            group
+                                        </span>
+                                        <p>2 - 4 Person</p>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                            <figcaption>
+                                <h3>Features</h3>
+                                <ul>
+                                    <li class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            shower
+                                        </span>
+                                        <p>Shower</p>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            balcony
+                                        </span>
+                                        <p>Balcony</p>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            water_heater
+                                        </span>
+                                        <p>Water Heater</p>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            ac_unit
+                                        </span>
+                                        <p>AC Unit</p>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            tv
+                                        </span>
+                                        <p>Television</p>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            wifi
+                                        </span>
+                                        <p>Internet</p>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                            <figcaption>
+                                <h3>Amenities</h3>
+                                <ul>
+                                    <li class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            water_full
+                                        </span>
+                                        <p>Mineral Water</p>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            local_cafe
+                                        </span>
+                                        <p>Tea & Coffee</p>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            wash
+                                        </span>
+                                        <p>Soap & Shampoo</p>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </div>
+                        <div class="features__book">
+                            <p>Start From</p>
+                            <h3><span class="price__room">3.000.000</span><sub> / Night</sub></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__room d-grid">
+                    <div class="col slide">
+                        <div class="main__preview"></div>
+                        <div class="scroll__preview d-flex">
+                            <div class="photo__change"></div>
+                            <div class="photo__change"></div>
+                            <div class="photo__change"></div>
+                            <div class="photo__change"></div>
+                            <div class="photo__change"></div>
+                            <div class="photo__change"></div>
+                            <div class="photo__change"></div>
+                        </div>
+                    </div>
+                    <div class="col room__features">
+                        <figcaption>
+                            <h2 class="room__name">Cluster Bougenville</h2>
+                        </figcaption>
+                        <div class="features__content">
+                            <figcaption>
+                                <h3>Room Information</h3>
+                                <ul>
+                                    <li class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            bed
+                                        </span>
+                                        <p class="type">Deluxe</p>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            straighten
+                                        </span>
+                                        <p>42.0 m<sup>2</sup></p>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            group
+                                        </span>
+                                        <p>2 - 4 Person</p>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                            <figcaption>
+                                <h3>Features</h3>
+                                <ul>
+                                    <li class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            shower
+                                        </span>
+                                        <p>Shower</p>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            balcony
+                                        </span>
+                                        <p>Balcony</p>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            water_heater
+                                        </span>
+                                        <p>Water Heater</p>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            ac_unit
+                                        </span>
+                                        <p>AC Unit</p>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            tv
+                                        </span>
+                                        <p>Television</p>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            wifi
+                                        </span>
+                                        <p>Internet</p>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                            <figcaption>
+                                <h3>Amenities</h3>
+                                <ul>
+                                    <li class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            water_full
+                                        </span>
+                                        <p>Mineral Water</p>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            local_cafe
+                                        </span>
+                                        <p>Tea & Coffee</p>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            wash
+                                        </span>
+                                        <p>Soap & Shampoo</p>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </div>
+                        <div class="features__book">
+                            <p>Start From</p>
+                            <h3><span class="price__room">3.000.000</span><sub> / Night</sub></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__room d-grid">
+                    <div class="col slide">
+                        <div class="main__preview"></div>
+                        <div class="scroll__preview d-flex">
+                            <div class="photo__change"></div>
+                            <div class="photo__change"></div>
+                            <div class="photo__change"></div>
+                            <div class="photo__change"></div>
+                            <div class="photo__change"></div>
+                            <div class="photo__change"></div>
+                            <div class="photo__change"></div>
+                        </div>
+                    </div>
+                    <div class="col room__features">
+                        <figcaption>
+                            <h2 class="room__name">Cluster Anggrek</h2>
+                        </figcaption>
+                        <div class="features__content">
+                            <figcaption>
+                                <h3>Room Information</h3>
+                                <ul>
+                                    <li class="d-flex">
+                                        <span class="material-symbols-outlined">
+                                            bed
+                                        </span>
+                                        <p class="type">Junior Suite</p>
+                                    </li>
                                     <li class="d-flex">
                                         <span class="material-symbols-outlined">
                                             straighten

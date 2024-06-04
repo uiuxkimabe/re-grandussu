@@ -1,3 +1,7 @@
+html,body {
+    scroll-behavior: smooth;
+}
+
 /* Hero */
 
 #hero {
@@ -21,7 +25,7 @@
 #rooms .header__nav {
     justify-content: flex-start;
     position: sticky;
-    top: 52px;
+    top: 51px;
     background-color: var(--basic);
     gap: 1em;
 }
@@ -36,7 +40,7 @@
 #rooms .room__overview {
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: 1em;
-    margin-top: 1em;
+    margin-top: 3em;
 }
 
 .room__overview h3 {
@@ -65,7 +69,7 @@
 
 .maps {
     overflow: hidden;
-    margin: 2em 0;
+    margin: 3em 0;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     gap: 1em;
     align-items: start !important;
@@ -73,6 +77,32 @@
 
 .maps iframe {
     width: 100%;
+}
+
+.room__detail .main__preview {
+    height: 350px;
+    margin-bottom: 1em;
+    background-color: #d41283;
+}
+
+.scroll__preview {
+    justify-content: flex-start;
+    gap: 1em;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.scroll__preview .photo__change {
+    flex: 0 0 80px;
+    height: 80px;
+    border-radius: 4px;
+    background-color: #d41283;
+    scroll-snap-align: start;
+}
+
+.room__detail .card__room {
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 1.5em;
 }
 
 .room__detail .card__room figcaption {
@@ -101,6 +131,10 @@
 .room__detail .room__features .features__content {
     height: 400px;
     overflow-y: scroll;
+}
+
+.room__features .features__book {
+    padding: 1em 0;
 }
 
 /* End Rooms */
