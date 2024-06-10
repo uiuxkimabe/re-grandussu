@@ -63,7 +63,7 @@ html,body {
 }
 
 #rooms .cards figure {
-    grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(320px, 1fr));
     gap: 1em;
     align-items: center;
     /* margin: 3em 0; */
