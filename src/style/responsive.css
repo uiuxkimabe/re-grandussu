@@ -41,6 +41,23 @@
     }
     /* End Highlight Room */
 
+    /* Room CSS */
+
+    /* Overview */ 
+
+    .overview .col {
+        justify-content: flex-start;
+    }
+
+
+
+    /* Rooms */
+    
+    #rooms .cards img {
+        border-radius: 10px 0 0 10px;
+    }
+
+
 }
 
 /* Media Md */

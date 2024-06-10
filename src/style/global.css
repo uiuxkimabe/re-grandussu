@@ -413,7 +413,7 @@ nav .logo a {
   animation: infiniteSlide 15s linear infinite;
   filter: grayscale(100%);
   max-width: 80px;
-  aspect-ratio: 1;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 10px;
 }
