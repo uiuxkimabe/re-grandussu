@@ -157,9 +157,10 @@ html,body {
 
 #description .head__banner {
     padding: 1em;
-    background-color: rgb(233, 188, 195);
-    color: #d41283;
+    background-color: var(--basic);
+    color: var(--dark);
     border-radius: 10px;
+    border: 1px solid var(--dark);
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: 1em;
     align-items: center;
@@ -181,8 +182,8 @@ html,body {
 .nearby ul li, .facilities ul li {
     justify-content: flex-start;
     gap: 10px;
-    border: 1px solid pink;
-    color: #d41283;
+    border: 1px solid var(--dark);
+    color: var(--dark);
     font-weight: 500;
     padding: 8px;
     border-radius: 10px;
